@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>nl.yer.games</groupId>
 	<artifactId>chess-web</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.0-SNAPSHOT</version>
 	<name>chess-web</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -93,6 +93,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
