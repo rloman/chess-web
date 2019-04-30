@@ -12,11 +12,11 @@ public class Piece {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    private String name;
+
     public long getId() {
         return id;
     }
-
-    private String name;
 
     public String getName() {
         return name;
