@@ -13,7 +13,6 @@ public class Piece {
     private long id;
 
     private String name;
-
     private int points;
 
     public long getId() {
@@ -26,5 +25,13 @@ public class Piece {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getPoints() {
+        return points;
+    }
+
+    public void setPoints(int points) {
+        this.points = points;
     }
 }
