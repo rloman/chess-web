@@ -1,9 +1,8 @@
 package nl.yer.games.chessweb.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import nl.yer.games.chessweb.model.enums.Genre;
+
+import javax.persistence.*;
 
 @Entity
 public class Piece {
@@ -15,7 +14,11 @@ public class Piece {
     private String name;
     private int points;
 
+    @Enumerated(value=EnumType.STRING)
+    private Genre genre;
+
     public long getId() {
+
         return id;
     }
 
@@ -29,6 +32,14 @@ public class Piece {
 
     public int getPoints() {
         return points;
+    }
+
+    public Genre getGenre() {
+        return genre;
+    }
+
+    public void setGenre(Genre genre) {
+        this.genre = genre;
     }
 
     public void setPoints(int points) {
