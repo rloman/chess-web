@@ -55,6 +55,7 @@ public class PieceController {
 
             // set the values to target from input
             target.setName(input.getName());
+            target.setPoints(input.getPoints());
 
             // save target
             return this.pieceService.save(target);
