@@ -22,6 +22,7 @@ public class PieceService {
         return pieceRepository.findAll();
     }
 
+	@Transactional
     public Piece save(Piece piece) {
 
         return this.pieceRepository.save(piece);
