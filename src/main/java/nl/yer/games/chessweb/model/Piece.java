@@ -14,6 +14,8 @@ public class Piece {
 
     private String name;
 
+    private int points;
+
     public long getId() {
         return id;
     }

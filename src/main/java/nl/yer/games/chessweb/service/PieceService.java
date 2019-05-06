@@ -23,4 +23,12 @@ public class PieceService {
     public Piece save(Piece piece) {
         return this.pieceRepository.save(piece);
     }
+
+    public Optional<Piece> findById(Long aLong) {
+        return pieceRepository.findById(aLong);
+    }
+
+    public void deleteById(Long aLong) {
+        pieceRepository.deleteById(aLong);
+    }
 }
